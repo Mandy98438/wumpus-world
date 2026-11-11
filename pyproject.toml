@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minecraft-wumpus-world"
+version = "1.0.0"
+description = "A Minecraft-themed Wumpus World game built with Python and tkinter"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [{ name = "Mayank Umrey" }]
+keywords = ["wumpus-world", "game", "tkinter", "minecraft"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+]
+
+[project.scripts]
+wumpus-world = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
